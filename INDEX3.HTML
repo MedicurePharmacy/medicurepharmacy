@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Medicure Pharmacy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Medicure Pharmacy</h1>
+    <p>Your trusted online pharmacy</p>
+  </header>
+
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="product" data-id="1" data-name="optifyme" data-price=" RM138.00">
+      <h3>Optifyme</h3>
+      <p>(Botanical beverage yuzu,red amaranth extract,maqui berry & blue spirulina) for eye problems.</p>
+      <p>Price: RM138</p>
+      <button onclick="addToCart(1)">Add to Cart</button>
+    </div>
+
+    <div class="product" data-id="2" data-name="TocoPQQ" data-price="RM95">
+      <h3>TocoPQQ</h3>
+      <p>BNE TocoPQQ combines 20mg PQQ, ginkgo, and tocotrienols to boost cognitive function, memory, and brain health. This synergistic blend also supports heart health, promoting overall mental clarity and cardiovascular wellness for a comprehensive approach to well-being.</p>
+      <p>Price: RM95</p>
+      <button onclick="addToCart(2)">Add to Cart</button>
+    </div>
+    
+    <div class="product" data-id="3" data-name="Ezz-NMN" data-price="RM79.00">
+      <h3>Ezz-NMN</h3>
+      <p>reduce stress and anxiety, enhance memory and concerntration , improve sleep quality and boost physical endurance.</p>
+      <p>Price: RM79</p>
+      <button onclick="addToCart(2)">Add to Cart</button>
+    </div>
+
+    <div class="product" data-id="4" data-name="S.HE-GLO JELLY" data-price="RM79.00">
+      <h3>S.HE-GLO JELLY</h3>
+      <p>S.He-Glo Jelly: Edible skincare for a radiant glow. Contains collagen peptide, white tomato, and more to repair, rejuvenate, whiten and hydrate your skin..</p>
+      <p>Price: RM79</p>
+      <button onclick="addToCart(2)">Add to Cart</button>
+    </div>
+  </section>
+
+  <section id="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p id="total-price">Total: RM0</p>
+    <button onclick="checkout()">Checkout</button>
+  </section>
+
+  <script src="cart.js"></script>
+</body>
+</html>
